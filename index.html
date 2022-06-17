@@ -5,99 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="debug">
-    <header class="nav-header pad-x-2">
-        <div class="container dsp-flex space-btw align-center">
-            <div class="box">logo</div>
-            <div class="box">options</div>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
 
-        </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="nav-ul">
+                <ul>
+                    <li><a href="#planning">Planning</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
- 
-    <main >
-        <!-- SECTION 1: GRID -->
-        <section class="pad-x-2" id="grid">
+    
+    <!-- MAIN SECTION -->
+    <main>
+        <section id="grid">
             <div class="container">
-                <div class="cards">
-                    <div class="card radius">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                    </div>
-                    <div class="card radius">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                    </div>
-                    <div class="card radius">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                    </div>
-                    <div class="card radius">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                    </div>
-                    <div class="card radius">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                <div class="cards radius pad">
+                    <div class="card-1">
+                        <div class="card-text">
+                            <h2>Get a demo application</h2>
+                            <p id="first-grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam quasi nihil quo repellendus vitae illo cum doloremque, nemo et vel ea neque dolorum blanditiis iusto ab fugiat obcaecati accusantium.</p>
+                            <button class="blue-btn radius"><i class="fa-brands fa-apple"></i> App Store</button>
+                        </div>
+                        <div class="card-img">
+                            <img src="./img/phone.png" alt="phone screen">
+                        </div>
                     </div>
                 </div>
+
+                <div class="cards radius pad">
+                    <div class="card">
+                        <div class="big-icon">
+                            <i class="fa-solid fa-file-code"></i>
+                        </div>
+                        <div class="card-text">
+                            <h2>Clean Code</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fuga nobis exercitationem tempora quae ad mollitia modi explicabo. Nisi rem ducimus mollitia. Facilis quos unde tempore veritatis similique, aut fugit!</p>
+
+                        </div>
+                    </div> 
+                </div>   
+                <div class="cards radius pad">
+                    <div class="card">
+                        <div class="big-icon">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <div class="card-text">
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fuga nobis exercitationem tempora quae ad mollitia modi explicabo. Nisi rem ducimus mollitia. Facilis quos unde tempore veritatis similique, aut fugit!</p>
+
+                        </div>
+                    </div> 
+                </div>   
+                <div class="cards radius pad">
+                    <div class="card">
+                        <div class="big-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="card-text">
+                            <h2>Development</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fuga nobis exercitationem tempora quae ad mollitia modi explicabo. Nisi rem ducimus mollitia. Facilis quos unde tempore veritatis similique, aut fugit!</p>
+
+                        </div>
+                    </div> 
+                </div>   
+                <div class="cards radius pad">
+                    <div class="card">
+                        <div class="big-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div class="card-text">
+                            <h2>Branding</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fuga nobis exercitationem tempora quae ad mollitia modi explicabo. Nisi rem ducimus mollitia. Facilis quos unde tempore veritatis similique, aut fugit!</p>
+
+                        </div>
+                    </div> 
+                </div>   
+                
             </div>
         </section>
-
-        <!-- SECTION 2: STRATEGIC PLANNING -->
 
         <section id="planning">
-            <div class="container columns">
-                <div class="column">
-                    <div class="box">content</div>
-                    <div class="box">content</div>
-                    <div class="box">content</div>
-                </div>
-                <div class="column">
-                    <div class="box">content</div>
-                    <div class="box">content</div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- SECTION 3: TESTIMONIALS -->
-
-        <section class="pad-x-2" id="testimonial">
             <div class="container">
-                <h5>testimonials</h5>
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At similique aperiam hic error suscipit explicabo voluptatibus, fugit cupiditate eius aliquid voluptatum, atque officiis modi. Sequi quos temporibus ipsam reiciendis dicta.</p>
+                <div>
+                    <img src="./img/planning1.png" alt="girl with a laptop">
+                    <h2>Strategic Planning</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptates et illum quos facilis enim quas, culpa ratione minus aperiam perferendis excepturi temporibus reprehenderit minima autem! Perspiciatis fugit repudiandae reprehenderit.</p>
 
-                <div class="card">
-                    <div class="o-img"></div>
-                    <div class="img-txt">
-                        <p></p>
-                        <h4></h4>
-                    </div>
                 </div>
-                <div class="card">
-                    <div class="o-img"></div>
-                    <div class="img-txt">
-                        <p></p>
-                        <h4></h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="o-img"></div>
-                    <div class="img-txt">
-                        <p></p>
-                        <h4></h4>
-                    </div>
+                <div>
+                    <img src="./img/planning2.png" alt="guy with a laptop">
+                    <h3>App Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum quisquam aliquam! Iusto eum enim architecto quisquam reprehenderit sint, deleniti culpa nemo minus provident magni, perferendis at fuga, autem consectetur?</p>
+                    <i class="fa-solid fa-arrow-down"></i>
                 </div>
             </div>
+        </section>
+
+        <section id="testimonials">
 
         </section>
+
+        <section id="features">
+
+        </section>
+
+        <section id="about-us">
+
+        </section>
+
+        <section id="get-started">
+            
+        </section>
+
     </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+
+    </footer>
 </body>
 </html>

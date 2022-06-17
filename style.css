@@ -3,126 +3,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 :root{
-    --blue-first: rgb(0, 132, 254)
-    --blue-light: rgb(182, 221, 255)
-    --milka: rgb(151, 146, 228)
-    --grid-text: rgb(114, 139, 160)
-    --yellow-text: rgb(253, 193, 95)
-    --light-purple-text: rgb(204, 202, 242)
-}
-
-.dsp-flex{
-    display: flex;
-}
-
-.space-btw{
-    justify-content: space-between;
-}
-
-.align-center{
-    align-items: center;
+    --blue-first: rgb(0, 132, 254);
+    --blue-light: rgb(182, 221, 255);
+    --milka: rgb(151, 146, 228);
+    --grid-text: rgb(114, 139, 160);
+    --yellow-text: rgb(253, 193, 95);
+    --light-purple-text: rgb(204, 202, 242);
 }
 
 .container{
-    max-width: 677px;
+    width: 80%;
     margin: auto;
-}
-
-.pad-x-2{
-    padding: 0 2rem;
 }
 
 .radius{
     border-radius: 20px;
 }
 
-/* DEBUG RULES */
-
-.debug .box{
-    height: 60px;
-    padding: 1rem;
-    background-color: rgb(182, 221, 255);
-}
-
-#intro .card:first-child{
-    width: 50%;
-    height: 100%;
-}
-
-/* HEADER */
-
-.nav-header{
+section{
     width: 100%;
-    height: 80px;
-    margin-bottom: 2.5rem;
-    background-color: rgb(0, 132, 254)
+}
+
+.pad{
+    padding: 3rem;
+}
+/* HEADER: NAV SECTION */
+header{
+    background-color: var(--blue-first);
+    color: white;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-ul{
+    display: none;
 }
 
 /* MAIN SECTION */
 
-/* SECTION 1: GRID */
+/* SECTION: PLANNING */
 
-
-#grid .card{
-    margin-bottom: 1.5rem;
+.cards{
+    background-color: var(--blue-light);
+    margin-top: 100px;
 }
 
-/* SECTION 2: STRATEGIC PLANNING */
-
-#planning{
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    background-color: rgb(151, 146, 228);
-}
-
-.planning .column{
+.card-text h2{
+    text-align: center;
     margin: 1rem;
+    color: var(--blue-first);
+    margin-top: 2rem;
+    font-size: bolder;
 }
-/* MEDIA QUERY SECTION */
+
+.card-text p{
+    text-align: center;
+    margin: 1rem;
+    color: var(--grid-text);
+}
+
+.card-text #first-grid{
+    text-align: start;
+}
+
+.blue-btn{
+    color: white;
+    display: block;
+    padding: .7rem;
+    background-color: var(--blue-first);
+    border: none;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card-img{
+    display: block;
+}
+
+.big-icon{
+    font-size: 5rem;
+    color: var(--blue-first);
+    text-align: center;
+    margin: auto;
+}
+/* MEDIA QUERIES */
 
 /* TABLET */
-
 @media screen and (min-width: 768px){
-    .container{
-        max-width: 750px;
-    }
-    .cards{
+    .grid .container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: -.75rem;
-        margin-right: -.75rem;
     }
-    #grid .card{
-        width: calc(33.3% - 1.5rem);
-        margin-left: .75rem;
-        margin-right: .75rem;
+
+    .card-1{
+        width: 66.6%;
     }
-    #intro .card:first-child{
-        width: calc(66.6% - 1.5rem);
-        display: flex;
+    .card{
+        width: 33.3%;
     }
+
 }
 
-/* DESKTOP */
 
-@media screen and (min-width: 992px){
-    .container{
-        max-width: 950px;
-    }
-    #intro .card:first-child{
-        display: flex;
-    }
 
-    #planning .columns{
-        display: flex;
-        align-items: flex-end;
+
+/* LAPTOP */
+@media screen and (min-width:992px){
+    .nav-ul{
+        display: block;
     }
-    #planning .column{
-        width: calc(50% - 4rem);
+    .menu{
+        display: none;
     }
-    
 }
