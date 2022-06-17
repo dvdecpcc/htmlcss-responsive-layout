@@ -75,9 +75,11 @@ a{
 
 .cards{
     background-color: var(--blue-light);
-    margin-top: 100px;
+    margin: 1.5rem;
 }
-
+.cards:first-child{
+    margin-top: 80px;
+}
 .card-text h2{
     text-align: center;
     margin: 1rem;
@@ -116,20 +118,30 @@ a{
     text-align: center;
     margin: auto;
 }
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 /* TABLET */
 @media screen and (min-width: 768px){
+    .container{
+        max-width: 750px;
+    }
     .grid .container{
         display: flex;
         flex-wrap: wrap;
     }
 
     .card-1{
-        width: 66.6%;
+        width: calc(66.6% - .75rem);
     }
     .card{
-        width: 33.3%;
+        width: calc(33.3% - .75rem);
     }
 
 }
@@ -139,6 +151,10 @@ a{
 
 /* LAPTOP */
 @media screen and (min-width:992px){
+    .container{
+        max-width: 940px;
+    }
+
     .nav-ul{
         display: block;
     }
